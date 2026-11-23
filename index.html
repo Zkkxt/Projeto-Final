@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArmaZenlar - Sua casa, seu mundo!</title>
+  <meta name="description" content="Cama, mesa, banho e presentes. Sua casa, seu mundo!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=League+Spartan:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="barra-verde">
+    <a href="#sobre" class="botao-branco">Sobre Nós</a>
+    <a href="#itens" class="botao-branco">Ofertas</a>
+    <a href="#" class="nome-loja">ArmaZenlar</a>
+    <a href="#categorias" class="botao-branco">Categorias</a>
+    <a href="#itens" class="botao-branco">Lançamentos</a>
+  </nav>
+
+  <header class="topo">
+    <button id="btn-menu" class="btn-icone" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="28" height="28" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <a href="#"><img src="img/logo-mini.png" alt="ArmaZenlar" class="logo-pequeno"></a>
+    <form class="form-busca">
+      <input type="text" placeholder="Faça sua busca..." class="busca">
+      <button type="submit" class="btn-lupa" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M16 16l5 5"/></svg></button>
+    </form>
+    <a href="#" class="entrar">Entre ou<br>Cadastre-se</a>
+    <button id="btn-carrinho" class="btn-icone" aria-label="Abrir carrinho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="28" height="28" stroke-width="2"><path d="M2 3h3l3 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span id="contador">0</span></button>
+  </header>
+
+  <!-- MENU LATERAL -->
+  <aside id="menu-lateral" class="painel painel-esquerda">
+    <button class="fechar">✕</button>
+    <h3>Menu</h3>
+    <a href="#itens" class="botao-amarelo">Itens</a>
+    <a href="#categorias" class="botao-amarelo">Todas as categorias</a>
+    <a href="#times" class="botao-amarelo">Times</a>
+    <a href="#categorias/complemento" class="botao-amarelo">Complemento</a>
+    <a href="#categorias/quarto-solteiro" class="botao-amarelo">Quarto Solteiro</a>
+    <a href="#categorias/sala" class="botao-amarelo">Sala</a>
+    <a href="#categorias/estofados" class="botao-amarelo">Estofados</a>
+    <a href="#quem-somos" class="botao-amarelo">Quem Somos</a>
+    <a href="#sobre" class="botao-amarelo">Sobre Nós</a>
+  </aside>
+
+  <!-- CARRINHO -->
+  <aside id="carrinho" class="painel painel-direita">
+    <button class="fechar">✕</button>
+    <h3>Carrinho</h3>
+    <p id="carrinho-vazio">Carrinho Vazio</p>
+    <ul id="lista-carrinho"></ul>
+    <div id="resumo-carrinho">
+      <p id="total-carrinho"></p>
+      <p id="total-pix"></p>
+      <button id="btn-finalizar" class="btn-finalizar">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <!--  PÁGINA: INÍCIO  -->
+  <div id="pagina-home" class="pagina ativa">
+    <section class="hero">
+      <div class="hero-logo">
+        <img src="img/logo.png" alt="ArmaZenlar - Sua casa, seu mundo!">
+        <form class="form-busca busca-hero">
+          <input type="text" placeholder="Pesquise: caneca do São Paulo, Palmeiras..." class="busca">
+          <button type="submit" class="btn-lupa" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M16 16l5 5"/></svg></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="ambientes" class="secao">
+      <h2 class="titulo-pilula">EXPLORE POR AMBIENTE</h2>
+      <div class="grade-categorias">
+        <a href="#categorias/mesa" class="categoria">
+          <img src="img/cozinha.png" alt="Produtos para mesa" class="imagem-categoria">
+          <span class="rotulo">Mesa</span>
+        </a>
+        <a href="#categorias/banho" class="categoria">
+          <img src="img/banheiro.png" alt="Produtos para banho" class="imagem-categoria">
+          <span class="rotulo">Banho</span>
+        </a>
+        <a href="#categorias/cama" class="categoria">
+          <img src="img/cama.png" alt="Produtos para cama" class="imagem-categoria">
+          <span class="rotulo">Cama</span>
+        </a>
+        <a href="#categorias/presentes" class="categoria">
+          <img src="img/presente.png" alt="Opções de presentes" class="imagem-categoria">
+          <span class="rotulo">Presentes</span>
+        </a>
+        <a href="#times" class="categoria">
+          <img src="img/time.png" alt="Produtos de times de futebol" class="imagem-categoria">
+          <span class="rotulo">Times</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="itens" class="secao">
+      <h2 class="titulo-pilula">ITENS</h2>
+      <div id="grade-itens" class="grade-itens"></div>
+    </section>
+
+    <section id="quem-somos" class="secao">
+      <h2 class="titulo-pilula">QUEM SOMOS</h2>
+      <div class="grade-cartoes">
+        <article class="cartao">
+          <h3>Confiança e cuidado</h3>
+          <p>atenção aos detalhes em todas as etapas da compra.</p>
+        </article>
+        <article class="cartao">
+          <h3>Atendimento Personalizado</h3>
+          <p>atenção para entender o que cada cliente procura.</p>
+        </article>
+        <article class="cartao">
+          <h3>Variedade de produtos</h3>
+          <p>opções de cama, mesa, banho e presentes para diferentes ocasiões.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========== PÁGINA: CATEGORIAS ========== -->
+  <div id="pagina-categorias" class="pagina">
+    <section class="secao">
+      <h2 class="titulo-pilula">CATEGORIAS</h2>
+      <input type="text" id="filtro-categorias" class="busca-cat" placeholder="Pesquisar categoria: cama, banho, mesa...">
+      <div id="lista-categorias" class="lista-categorias"></div>
+      <h3 id="titulo-categoria" class="texto-apoio"></h3>
+      <div id="grade-categoria" class="grade-itens"></div>
+      <a href="#" class="botao-amarelo voltar">← Voltar ao início</a>
+    </section>
+  </div>
+
+  <!-- ========== PÁGINA: TIMES ========== -->
+  <div id="pagina-times" class="pagina">
+    <section class="secao">
+      <h2 class="titulo-pilula">TIMES</h2>
+      <div id="grade-times" class="grade-itens"></div>
+      <a href="#ambientes" class="botao-amarelo voltar">← Voltar</a>
+    </section>
+  </div>
+
+  <!-- ========== PÁGINA: RESULTADOS DA BUSCA ========== -->
+  <div id="pagina-busca" class="pagina">
+    <section class="secao">
+      <h2 class="titulo-pilula">RESULTADOS</h2>
+      <p id="resumo-busca" class="texto-apoio"></p>
+      <div id="grade-busca" class="grade-itens"></div>
+      <a href="#" class="botao-amarelo voltar">← Voltar ao início</a>
+    </section>
+  </div>
+
+  <!-- ========== PÁGINA: SOBRE NÓS ========== -->
+  <div id="pagina-sobre" class="pagina">
+    <section class="secao">
+      <h2 class="titulo-pilula">SOBRE NÓS</h2>
+      <div class="grade-cartoes">
+        <a class="cartao-link" href="https://www.instagram.com/armazenlar/" target="_blank" rel="noopener">
+          <span class="grande">📸</span><strong>Instagram</strong><small>@armazenlar</small>
+        </a>
+        <a class="cartao-link" href="https://maps.app.goo.gl/7uBkvMN1CjCrTpP88" target="_blank" rel="noopener">
+          <span class="grande">📍</span><strong>Onde estamos</strong><small>São Paulo, Rua Tamotsu Iwasse 03 Vila Nova Bonsucesso</small>
+        </a>
+        <a class="cartao-link" href="https://wa.me/5511930819623" target="_blank" rel="noopener">
+          <span class="grande">💬</span><strong>WhatsApp</strong><small>(11) 93081-9623</small>
+        </a>
+      </div>
+      <img src="img/loja.png" alt="Fachada da loja" class="foto-loja">
+    </section>
+  </div>
+
+  <footer>
+    <div class="rodape-verde">
+      <img src="img/logo-mini.png" alt="ArmaZenlar" class="logo-rodape">
+      <span>📞 (11) 93081-9623</span>
+      <div class="links-rodape">
+        <a href="#">Políticas de privacidade</a>
+        <a href="#">Termos de Troca</a>
+      </div>
+    </div>
+    <div class="rodape-cinza">
+      <div>
+        <h3>Horários de Funcionamento</h3>
+        <p>Segunda a Sexta: 09 às 19h</p>
+        <p>Sábado: 09 às 19h</p>
+        <p>Domingo: Fechado</p>
+      </div>
+      <div>
+        <h3>Formas de Pagamento</h3>
+        <p>Até 5x no Cartão ou 5% De Desconto Via PIX</p>
+        <p>💳 PIX</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511930819623" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="34" height="34" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.3 15.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 0 1 12 3.8zM8.6 7.2c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg></a>
+  <div id="fundo-escuro"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
